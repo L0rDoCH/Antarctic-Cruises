@@ -54,7 +54,7 @@
     <h1 class="visually-hidden">Сайт компании осуществляющей круизы в Антарктику</h1>
     <section class="intro">
       <div class="intro__wrapper container">
-        <img class="intro__bg" src="img/bg-top.jpg" srcset="img/bg-top@2x.jpg 2x" alt="Вид на антарктику" width="1366" height="658">
+        <img class="intro__bg" src="img/bg-top.jpg" srcset="img/bg-top@2x.jpg 2x" alt="Вид на антарктику" width="1366" height="1024">
         <h2 class="intro__title">Круизы в&nbsp;Антарктику</h2>
         <p class="intro__text">Волшебный мир айсбергов&nbsp;и&nbsp;пингвинов</p>
       </div>
@@ -72,7 +72,7 @@
 
     <section class="advantages" id="advantages">
       <div class="advantages__wrapper container">
-        <img class="advantages__bg" src="img/bg-advantages.jpg" srcset="img/bg-advantages@2x.jpg 2x" alt="Вид на заснеженные горы" width="1366" height="562">
+        <img class="advantages__bg" src="img/bg-advantages.jpg" srcset="img/bg-advantages@2x.jpg 2x" alt="Вид на заснеженные горы" width="1366" height="858">
         <h2 class="advantages__title">Преимущества</h2>
         <ul class="advantages__list">
           <li class="advantages__item">
@@ -225,6 +225,48 @@
             <a class="catalog__btn btn" href="#">Забронировать</a>
           </li>
         </ul>
+      </div>
+    </section>
+
+    <section class="booking">
+      <div class="container">
+        <div class="booking__wrapper">
+          <div>
+            <h2 class="booking__title">Раннее бронирование</h2>
+            <p class="booking__text">Забронируйте тур <br>за&nbsp;3-6 месяцев
+              до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
+          </div>
+          <img class="booking__bg" src="img/bg-form.jpg" srcset="img/bg-form@2x.jpg 2x" alt="Вид на горы и ледник" width="1481" height="805">
+          <form class="booking__form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
+            <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
+            <div class="booking__field">
+              <label>
+                <span class="visually-hidden">Имя</span>
+                <input name="name" type="text" placeholder="Имя" required>
+              </label>
+            </div>
+            <div class="booking__field">
+              <label>
+                <span class="visually-hidden">Телефон</span>
+                <input name="tel" type="number" placeholder="Телефон" required>
+              </label>
+            </div>
+            <div class="booking__field">
+              <label>
+                <span class="visually-hidden">Email</span>
+                <input name="email" type="email" placeholder="Email" required>
+              </label>
+            </div>
+            <div class="booking__control">
+              <label>
+                <input class="visually-hidden" type="checkbox" name="agree" required>
+                <span></span>
+                <span>Я&nbsp;согласен на&nbsp;обработку моих персональных данных</span>
+              </label>
+            </div>
+            <button class="btn booking__btn" type="submit">Оставить заявку</button>
+          </form>
+        </div>
       </div>
     </section>
   </main>

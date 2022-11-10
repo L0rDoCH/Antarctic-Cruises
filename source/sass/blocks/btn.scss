@@ -2,7 +2,13 @@
   display: inline-flex;
   padding: 14px 20px;
   vertical-align: middle;
+  justify-content: center;
 
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 11px;
+  text-align: center;
   color: $color-tangaroa;
 
   background-color: $color-alice-blue;
