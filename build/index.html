@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="сайт Круизы в Антарктику">
   <title>Круизы в Антарктику</title>
   <link rel="stylesheet" href="css/style.min.css">
@@ -269,6 +269,29 @@
         </div>
       </div>
     </section>
+
+    <section class="contacts">
+      <div class="contacts__wrapper container">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="contacts__map-wrapper" id="map"></div>
+        <div class="contacts__text-wrapper">
+          <p class="contacts__text">У&nbsp;вас ещё остались вопросы или сомнения?<br>
+            Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.</p>
+          <address class="contacts__address">
+            <svg width="18" height="22">
+              <use xlink:href="img/sprite.svg#icon-address"></use>
+            </svg>
+            <p>г.&nbsp;Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, 19/8</p>
+          </address>
+          <a class="contacts__phone" href="tel:+78002000000">
+            <svg width="18" height="22">
+              <use xlink:href="img/sprite.svg#icon-phone"></use>
+            </svg>
+            <p>8-800-200-00-00</p>
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
@@ -322,6 +345,7 @@
   </footer>
 </div>
 
+<script src="https://api-maps.yandex.ru/2.1/?apikey=d6cb05ff-077a-4268-9f6d-357f46b9a208&lang=ru_RU" type="text/javascript"></script>
 <script src="js/vendor.min.js"></script>
 <script src="js/main.min.js"></script>
 </body>

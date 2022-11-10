@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {mobileMenu} from './modules/mobile-menu.js';
+import {initMap} from './modules/map.js';
 
 
 // ---------------------------------
@@ -12,6 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
   mobileMenu();
+  initMap();
 
   // Modules
   // ---------------------------------

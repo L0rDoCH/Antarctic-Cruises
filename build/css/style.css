@@ -1225,6 +1225,57 @@ button,
   color: #f9fbfd;
 }
 
+.contacts {
+  padding: 120px 0;
+}
+
+.contacts__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.contacts__map-wrapper {
+  width: 100%;
+  height: 306px;
+}
+
+.contacts__text {
+  margin: 0 0 40px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.contacts__address,
+.contacts__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.contacts__address svg,
+.contacts__phone svg {
+  margin: 5px 10px 5px 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.contacts__address p,
+.contacts__phone p {
+  margin: 0;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  font-style: normal;
+}
+
 .footer {
   color: #f9fbfd;
   background-color: #011c40;
@@ -1487,6 +1538,27 @@ button,
     text-align: center;
   }
 
+  .contacts {
+    padding: 100px 0;
+  }
+
+  .contacts__wrapper {
+    gap: 30px;
+  }
+
+  .contacts__map-wrapper {
+    height: 335px;
+  }
+
+  .contacts__text br {
+    display: none;
+  }
+
+  .contacts__address,
+  .contacts__phone {
+    margin-bottom: 30px;
+  }
+
   .footer__wrapper {
     margin: 47px auto;
   }
@@ -1706,6 +1778,29 @@ button,
 
   .booking__control span {
     line-height: 12px;
+  }
+
+  .contacts {
+    padding: 65px 0;
+  }
+
+  .contacts__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+
+  .contacts__map-wrapper {
+    height: 316px;
+  }
+
+  .contacts__phone {
+    margin-bottom: 40px;
   }
 
   .footer__wrapper {
