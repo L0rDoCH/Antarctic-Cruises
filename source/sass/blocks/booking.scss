@@ -3,48 +3,51 @@
   padding: 50px 0;
 
   @include vp-1023 {
-    padding: 100px 0;
+    padding: 88px 0 100px;
   }
 
   @include vp-767 {
-    padding: 65px 0;
+    padding: 59px 0 65px;
   }
 }
 
 .booking__wrapper {
   display: grid;
   grid-template-columns: 1fr 403px;
+  gap: 20px;
   align-items: center;
   padding: 0 60px;
 
   @include vp-1023 {
     display: flex;
     flex-direction: column;
+    gap: 0;
     padding: 0;
   }
 }
 
 .booking__title {
-  margin: 0 0 30px;
+  margin: 0 0 8px;
   font-weight: 700;
   font-size: 40px;
   line-height: 60px;
 
   @include vp-1023 {
-    margin-bottom: 25px;
+    margin-bottom: 5px;
     font-size: 34px;
     line-height: 51px;
     text-align: center;
   }
 
   @include vp-767 {
+    margin-bottom: 15px;
     font-size: 24px;
     line-height: 31px;
   }
 }
 
 .booking__text {
-  margin: 0;
+  margin: 0 0 8px;
   max-width: 360px;
   font-size: 18px;
   line-height: 27px;
@@ -54,12 +57,12 @@
   }
 
   @include vp-1023 {
-    margin: 0 auto 60px;
+    margin: 0 auto 52px;
     text-align: center;
   }
 
   @include vp-767 {
-    margin-bottom: 40px;
+    margin-bottom: 33px;
     font-size: 16px;
     line-height: 22px;
 
@@ -77,31 +80,44 @@
   left: 0;
   top: 0;
   object-fit: cover;
-  object-position: center;
+  object-position: 50% 4%;
   overflow: hidden;
   background-color: $color-solitude;
   z-index: -1;
+
+  @include vp-1023 {
+    object-position: 70% 50%;
+  }
+
+  @include vp-767 {
+    object-position: 52% 50%;
+  }
 }
 
 .booking__form {
   display: flex;
   flex-direction: column;
   max-width: 403px;
-  padding: 50px;
+  padding: 44px 50px 50px;
   color: $color-alice-blue;
   background-color: $color-tangaroa;
 
   @include vp-767 {
-    padding: 40px 30px;
+    padding: 35px 30px 40px;
   }
 
   p {
-    margin: 0 0 35px;
+    margin: 0 0 26px;
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
 
+    @include vp-1023 {
+      margin-bottom: 27px;
+    }
+
     @include vp-767 {
+      margin-bottom: 28px;
       line-height: 25px;
       text-align: center;
     }
@@ -112,7 +128,7 @@
   input {
     width: 100%;
     margin-bottom: 20px;
-    padding: 11px 16px;
+    padding: 12px 16px 10px;
     font-size: 14px;
     line-height: 21px;
     border: none;
@@ -129,6 +145,10 @@
 .booking__control {
   position: relative;
   margin-bottom: 30px;
+
+  @include vp-767 {
+    margin-bottom: 26px;
+  }
 
   &:focus-within {
     label {
@@ -148,6 +168,11 @@
       border-right: 1px solid $color-sapphire;
       border-bottom: 1px solid $color-sapphire;
       transform: rotate(45deg);
+
+      @include vp-767 {
+        top: 3px;
+        left: 6px;
+      }
     }
   }
 
@@ -168,6 +193,10 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+
+    @include vp-767 {
+      align-items: normal;
+    }
   }
 
   input + span {
@@ -179,6 +208,12 @@
     box-sizing: border-box;
     margin-right: 5px;
     background-color: $color-alice-blue;
+
+    @include vp-767 {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+    }
   }
 
   span {
@@ -191,4 +226,8 @@
       line-height: 12px;
     }
   }
+}
+
+.booking__btn {
+  padding: 16px 20px;
 }

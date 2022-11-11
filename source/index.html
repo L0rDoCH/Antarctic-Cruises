@@ -6,7 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="сайт Круизы в Антарктику">
   <title>Круизы в Антарктику</title>
+  <link rel="preload" href="css/style.min.css" as="style" crossorigin="anonymous">
+  <link rel="preload" href="js/main.min.js" as="script" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserratbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserratmedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserratregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserratsemibold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml"> <!--svg-->
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest" crossorigin="use-credentials">
+
 </head>
 <body>
 
@@ -16,7 +27,6 @@
     <path fill-rule="evenodd" clip-rule="evenodd" d="M69.4414 34.0314C47.641 16.428 13.7091 40.6289 0 31.2961C15.0723 44.5215 50.3019 22.1644 69.4414 34.0314Z" fill="currentcolor"/>
     <path fill-rule="evenodd" clip-rule="evenodd" d="M70 35.4157C52.8956 24.5171 27.4568 39.6838 14.4189 36.1717C28.5467 43.0283 54.8482 27.8361 70 35.4157Z" fill="currentcolor"/>
   </symbol>
-
 </svg>
 
 <div class="wrapper">
@@ -39,7 +49,7 @@
             <a class="header__link" href="#catalog">Ближайшие круизы</a>
           </li>
           <li class="header__nav-item">
-            <a class="header__link" href="#">Контакты</a>
+            <a class="header__link" href="#contacts">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -54,7 +64,10 @@
     <h1 class="visually-hidden">Сайт компании осуществляющей круизы в Антарктику</h1>
     <section class="intro">
       <div class="intro__wrapper container">
-        <img class="intro__bg" src="img/bg-top.jpg" srcset="img/bg-top@2x.jpg 2x" alt="Вид на антарктику" width="1366" height="1024">
+        <picture>
+          <source srcset="img/bg-top.webp 1x, img/bg-top@2x.webp 2x" type="image/webp">
+          <img class="intro__bg" src="img/bg-top.jpg" srcset="img/bg-top@2x.jpg 2x" alt="Вид на антарктику" width="1366" height="1024" loading="lazy">
+        </picture>
         <h2 class="intro__title">Круизы в&nbsp;Антарктику</h2>
         <p class="intro__text">Волшебный мир айсбергов&nbsp;и&nbsp;пингвинов</p>
       </div>
@@ -66,13 +79,19 @@
           <h2>Путешествие на&nbsp;край&nbsp;Земли</h2>
           <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы&nbsp;сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и&nbsp;многое другое.</p>
         </div>
-        <img class="about__img" src="img/journey-to-the-ends.jpg" srcset="img/journey-to-the-ends@2x.jpg 2x" alt="Пингвины на леднике" width="560" height="301">
+        <picture>
+          <source srcset="img/journey-to-the-ends.webp 1x, img/journey-to-the-ends@2x.webp 2x" type="image/webp">
+          <img class="about__img" src="img/journey-to-the-ends.jpg" srcset="img/journey-to-the-ends@2x.jpg 2x" alt="Пингвины на леднике" width="560" height="301" loading="lazy">
+        </picture>
       </div>
     </section>
 
     <section class="advantages" id="advantages">
       <div class="advantages__wrapper container">
-        <img class="advantages__bg" src="img/bg-advantages.jpg" srcset="img/bg-advantages@2x.jpg 2x" alt="Вид на заснеженные горы" width="1366" height="858">
+        <picture>
+          <source srcset="img/bg-advantages.webp 1x, img/bg-advantages@2x.webp 2x" type="image/webp">
+          <img class="advantages__bg" src="img/bg-advantages.jpg" srcset="img/bg-advantages@2x.jpg 2x" alt="Вид на заснеженные горы" width="1366" height="858" loading="lazy">
+        </picture>
         <h2 class="advantages__title">Преимущества</h2>
         <ul class="advantages__list">
           <li class="advantages__item">
@@ -86,7 +105,7 @@
             <svg width="38" height="32">
               <use xlink:href="img/sprite.svg#icon-all-inclusive"></use>
             </svg>
-            <h3>Система все включено</h3>
+            <h3>Система все&nbsp;включено</h3>
             <p>Все наши круизы работают по&nbsp;системе &laquo;Все Включено&raquo;.<br>Великолепные блюда и&nbsp;безлимитный бар доступны для&nbsp;вас 24&nbsp;часа.</p>
           </li>
           <li class="advantages__item">
@@ -106,7 +125,10 @@
         <ul class="catalog__list">
           <li class="catalog__item" tabindex="0">
             <h3>Круиз "Астория"</h3>
-            <img src="img/cards/card-1.jpg" srcset="img/cards/card-1@2x.jpg 2x" alt="Ледник на фоне горы" width="309" height="386">
+            <picture>
+              <source srcset="img/cards/card-1.webp 1x, img/cards/card-1@2x.webp 2x" type="image/webp">
+              <img src="img/cards/card-1.jpg" srcset="img/cards/card-1@2x.jpg 2x" alt="Ледник на фоне горы" width="309" height="386" loading="lazy">
+            </picture>
             <div>
               <b>Маршрут</b>
               <p>Аргентина - Фолклендские острова - Антарктида</p>
@@ -121,7 +143,10 @@
           </li>
           <li class="catalog__item" tabindex="0">
             <h3>Круиз “Элайн”</h3>
-            <img src="img/cards/card-2.jpg" srcset="img/cards/card-2@2x.jpg 2x" alt="Ледник на фоне горы" width="309" height="386">
+            <picture>
+              <source srcset="img/cards/card-2.webp 1x, img/cards/card-2@2x.webp 2x" type="image/webp">
+              <img src="img/cards/card-2.jpg" srcset="img/cards/card-2@2x.jpg 2x" alt="Ледник на фоне горы" width="309" height="386" loading="lazy">
+            </picture>
             <div>
               <b>Маршрут</b>
               <p>Аргентина - Фолклендские острова - Антарктида - Чили</p>
@@ -136,7 +161,10 @@
           </li>
           <li class="catalog__item" tabindex="0">
             <h3>Круиз "Атлантис"</h3>
-            <img src="img/cards/card-3.jpg" srcset="img/cards/card-3@2x.jpg 2x" alt="Айсберг в море" width="309" height="386">
+            <picture>
+              <source srcset="img/cards/card-3.webp 1x, img/cards/card-3@2x.webp 2x" type="image/webp">
+              <img src="img/cards/card-3.jpg" srcset="img/cards/card-3@2x.jpg 2x" alt="Айсберг в море" width="309" height="386" loading="lazy">
+            </picture>
             <div>
               <b>Маршрут</b>
               <p>Аргентина - Южная Георгия и Южные Сандвичевы Острова - Антарктида</p>
@@ -151,7 +179,10 @@
           </li>
           <li class="catalog__item" tabindex="0">
             <h3>Круиз "Одиссей"</h3>
-            <img src="img/cards/card-4.jpg" srcset="img/cards/card-4@2x.jpg 2x" alt="Море во льдах на фоне заснеженных гор" width="309" height="386">
+            <picture>
+              <source srcset="img/cards/card-4.webp 1x, img/cards/card-4@2x.webp 2x" type="image/webp">
+              <img src="img/cards/card-4.jpg" srcset="img/cards/card-4@2x.jpg 2x" alt="Море во льдах на фоне заснеженных гор" width="309" height="386" loading="lazy">
+            </picture>
             <div>
               <b>Маршрут</b>
               <p>Чили - Антарктида</p>
@@ -166,7 +197,10 @@
           </li>
           <li class="catalog__item" tabindex="0">
             <h3>Круиз "Олимпия"</h3>
-            <img src="img/cards/card-5.jpg" srcset="img/cards/card-5@2x.jpg 2x" alt="Пингвины на леднике на фоне айсберга" width="309" height="386">
+            <picture>
+              <source srcset="img/cards/card-5.webp 1x, img/cards/card-5@2x.webp 2x" type="image/webp">
+              <img src="img/cards/card-5.jpg" srcset="img/cards/card-5@2x.jpg 2x" alt="Пингвины на леднике на фоне айсберга" width="309" height="386" loading="lazy">
+            </picture>
             <div>
               <b>Маршрут</b>
               <p>Аргентина - Фолклендские острова - Южная Георгия - Антарктида</p>
@@ -181,7 +215,10 @@
           </li>
           <li class="catalog__item" tabindex="0">
             <h3>Круиз "Аврора"</h3>
-            <img src="img/cards/card-6.jpg" srcset="img/cards/card-6@2x.jpg 2x" alt="Море со льдинами на фоне ледника" width="309" height="386">
+            <picture>
+              <source srcset="img/cards/card-6.webp 1x, img/cards/card-6@2x.webp 2x" type="image/webp">
+              <img src="img/cards/card-6.jpg" srcset="img/cards/card-6@2x.jpg 2x" alt="Море со льдинами на фоне ледника" width="309" height="386" loading="lazy">
+            </picture>
             <div>
               <b>Маршрут</b>
               <p>Аргентина - Антарктида - Чили</p>
@@ -196,7 +233,10 @@
           </li>
           <li class="catalog__item" tabindex="0">
             <h3>Круиз "Леонор"</h3>
-            <img src="img/cards/card-7.jpg" srcset="img/cards/card-7@2x.jpg 2x" alt="Рыбацкое судно в море на фоне заснеженных гор" width="309" height="386">
+            <picture>
+              <source srcset="img/cards/card-7.webp 1x, img/cards/card-7@2x.webp 2x" type="image/webp">
+              <img src="img/cards/card-7.jpg" srcset="img/cards/card-7@2x.jpg 2x" alt="Рыбацкое судно в море на фоне заснеженных гор" width="309" height="386" loading="lazy">
+            </picture>
             <div>
               <b>Маршрут</b>
               <p>Чили - Южная Георгия - Антарктида - Аргентина</p>
@@ -211,7 +251,10 @@
           </li>
           <li class="catalog__item" tabindex="0">
             <h3>Круиз "Минион - 1"</h3>
-            <img src="img/cards/card-8.jpg" srcset="img/cards/card-8@2x.jpg 2x" alt="Море со льдинами на фоне заснеженных гор" width="309" height="386">
+            <picture>
+              <source srcset="img/cards/card-8.webp 1x, img/cards/card-8@2x.webp 2x" type="image/webp">
+              <img src="img/cards/card-8.jpg" srcset="img/cards/card-8@2x.jpg 2x" alt="Море со льдинами на фоне заснеженных гор" width="309" height="386" loading="lazy">
+            </picture>
             <div>
               <b>Маршрут</b>
               <p>Аргентина - Антарктида</p>
@@ -229,6 +272,10 @@
     </section>
 
     <section class="booking">
+      <picture>
+        <source srcset="img/bg-form.webp 1x, img/bg-form@2x.webp 2x" type="image/webp">
+        <img class="booking__bg" src="img/bg-form.jpg" srcset="img/bg-form@2x.jpg 2x" alt="Вид на горы и ледник" width="1481" height="805" loading="lazy">
+      </picture>
       <div class="container">
         <div class="booking__wrapper">
           <div>
@@ -236,7 +283,6 @@
             <p class="booking__text">Забронируйте тур <br>за&nbsp;3-6 месяцев
               до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
           </div>
-          <img class="booking__bg" src="img/bg-form.jpg" srcset="img/bg-form@2x.jpg 2x" alt="Вид на горы и ледник" width="1481" height="805">
           <form class="booking__form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
             <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
             <div class="booking__field">
@@ -261,7 +307,7 @@
               <label>
                 <input class="visually-hidden" type="checkbox" name="agree" required>
                 <span></span>
-                <span>Я&nbsp;согласен на&nbsp;обработку моих персональных данных</span>
+                <span>Я&nbsp;согласен на&nbsp;обработку моих&nbsp;персональных данных</span>
               </label>
             </div>
             <button class="btn booking__btn" type="submit">Оставить заявку</button>
@@ -270,7 +316,7 @@
       </div>
     </section>
 
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <div class="contacts__wrapper container">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__map-wrapper" id="map"></div>
@@ -314,7 +360,7 @@
               <a class="footer__link" href="#catalog">Ближайшие круизы</a>
             </li>
             <li class="footer__nav-item">
-              <a class="footer__link" href="#">Контакты</a>
+              <a class="footer__link" href="#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -324,7 +370,7 @@
         <h2 class="visually-hidden">Социальные сети</h2>
         <a class="social__link" href="#">
           <span class="visually-hidden">Мы в Одноклассниках</span>
-          <svg width="20" height="20">
+          <svg width="12" height="20">
             <use xlink:href="img/sprite.svg#icon-ok"></use>
           </svg>
         </a>

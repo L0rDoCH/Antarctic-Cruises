@@ -39,25 +39,25 @@ const openMenu = () => {
 
 
 export const mobileMenu = () => {
-  navMainToggle.classList.add('header__menu-toggle--JS-menu');
-  navMainMenu.classList.add('header-wrapper--close');
-  header.classList.add('header--close');
+  if (navMainMenu) {
+    navMainToggle.classList.add('header__menu-toggle--JS-menu');
+    navMainMenu.classList.add('header-wrapper--close');
+    header.classList.add('header--close');
 
-  navMainToggle.addEventListener('click', function () {
-    if (navMainBurger.classList.contains('header__menu-toggle-burger--close')) {
-      closeMenu();
-    } else {
-      openMenu();
-    }
-  });
-
-  navLinks.forEach((link) => {
-    link.addEventListener('click', () => {
+    navMainToggle.addEventListener('click', function () {
       if (navMainBurger.classList.contains('header__menu-toggle-burger--close')) {
         closeMenu();
+      } else {
+        openMenu();
       }
     });
-  });
+
+    navLinks.forEach((link) => {
+      link.addEventListener('click', () => {
+        if (navMainBurger.classList.contains('header__menu-toggle-burger--close')) {
+          closeMenu();
+        }
+      });
+    });
+  }
 };
-
-

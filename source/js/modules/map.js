@@ -1,13 +1,16 @@
 const ymaps = window.ymaps;
 const pinCoords = [59.937465, 30.322623];
+const mapContainer = document.querySelector('#map');
 
 export const initMap = () => {
-  ymaps.ready(init);
+  if (mapContainer) {
+    ymaps.ready(init);
+  }
 };
 
 function init() {
   const myMap = new ymaps.Map('map', {
-    center: [59.938635, 30.323118],
+    center: [59.938405, 30.323118],
     zoom: 16,
     controls: ['routeButtonControl', 'typeSelector', 'zoomControl'],
   }, {
