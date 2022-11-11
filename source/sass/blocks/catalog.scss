@@ -77,7 +77,8 @@
     }
   }
 
-  div {
+  dl {
+    margin: 0;
     height: 100%;
   }
 
@@ -102,7 +103,7 @@
     z-index: 2;
   }
 
-  b {
+  dt {
     display: block;
     margin-bottom: 2px;
     font-weight: 500;
@@ -110,7 +111,7 @@
     line-height: 20px;
   }
 
-  p {
+  dd {
     margin: 0 0 10px;
     font-size: 14px;
     line-height: 20px;

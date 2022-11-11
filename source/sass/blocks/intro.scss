@@ -1,5 +1,45 @@
 .intro {
   position: relative;
+
+  h2 {
+    margin: 0 0 11px 95px;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 66px;
+    color: $color-alice-blue;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    @include vp-1023 {
+      margin-left: 0;
+      font-size: 50px;
+      line-height: 61px;
+      text-shadow: none;
+    }
+
+    @include vp-767 {
+      font-size: 36px;
+      line-height: 45px;
+    }
+  }
+
+  p {
+    margin: 0 0 0 95px;
+    font-size: 20px;
+    line-height: 24px;
+    color: $color-alice-blue;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    @include vp-1023 {
+      margin: 0;
+      font-size: 18px;
+      line-height: 22px;
+      text-shadow: none;
+    }
+
+    @include vp-767 {
+      font-size: 16px;
+    }
+  }
 }
 
 .intro__wrapper {
@@ -39,45 +79,5 @@
     object-fit: cover;
     object-position: 45% 50%;
     height: calc(100% + 68px);
-  }
-}
-
-.intro__title {
-  margin: 0 0 11px 95px;
-  font-weight: 700;
-  font-size: 54px;
-  line-height: 66px;
-  color: $color-alice-blue;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-
-  @include vp-1023 {
-    margin-left: 0;
-    font-size: 50px;
-    line-height: 61px;
-    text-shadow: none;
-  }
-
-  @include vp-767 {
-    font-size: 36px;
-    line-height: 45px;
-  }
-}
-
-.intro__text {
-  margin: 0 0 0 95px;
-  font-size: 20px;
-  line-height: 24px;
-  color: $color-alice-blue;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-
-  @include vp-1023 {
-    margin: 0;
-    font-size: 18px;
-    line-height: 22px;
-    text-shadow: none;
-  }
-
-  @include vp-767 {
-    font-size: 16px;
   }
 }

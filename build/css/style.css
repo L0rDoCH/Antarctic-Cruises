@@ -829,6 +829,23 @@ button,
   position: relative;
 }
 
+.intro h2 {
+  margin: 0 0 11px 95px;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 66px;
+  color: #f9fbfd;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.intro p {
+  margin: 0 0 0 95px;
+  font-size: 20px;
+  line-height: 24px;
+  color: #f9fbfd;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .intro__wrapper {
   padding-top: 269px;
   padding-bottom: 278px;
@@ -850,23 +867,6 @@ button,
   -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   z-index: -1;
-}
-
-.intro__title {
-  margin: 0 0 11px 95px;
-  font-weight: 700;
-  font-size: 54px;
-  line-height: 66px;
-  color: #f9fbfd;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.intro__text {
-  margin: 0 0 0 95px;
-  font-size: 20px;
-  line-height: 24px;
-  color: #f9fbfd;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .about {
@@ -1022,7 +1022,8 @@ button,
   background-color: #011c40;
 }
 
-.catalog__item div {
+.catalog__item dl {
+  margin: 0;
   height: 100%;
 }
 
@@ -1049,7 +1050,7 @@ button,
   z-index: 2;
 }
 
-.catalog__item b {
+.catalog__item dt {
   display: block;
   margin-bottom: 2px;
   font-weight: 500;
@@ -1057,7 +1058,7 @@ button,
   line-height: 20px;
 }
 
-.catalog__item p {
+.catalog__item dd {
   margin: 0 0 10px;
   font-size: 14px;
   line-height: 20px;
@@ -1450,6 +1451,20 @@ button,
     margin-left: 24px;
   }
 
+  .intro h2 {
+    margin-left: 0;
+    font-size: 50px;
+    line-height: 61px;
+    text-shadow: none;
+  }
+
+  .intro p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 22px;
+    text-shadow: none;
+  }
+
   .intro__wrapper {
     padding-top: 271px;
     padding-bottom: 276px;
@@ -1458,20 +1473,6 @@ button,
   .intro__bg {
     -webkit-filter: none;
     filter: none;
-  }
-
-  .intro__title {
-    margin-left: 0;
-    font-size: 50px;
-    line-height: 61px;
-    text-shadow: none;
-  }
-
-  .intro__text {
-    margin: 0;
-    font-size: 18px;
-    line-height: 22px;
-    text-shadow: none;
   }
 
   .about {
@@ -1740,6 +1741,15 @@ button,
     margin-bottom: 28px;
   }
 
+  .intro h2 {
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  .intro p {
+    font-size: 16px;
+  }
+
   .intro__wrapper {
     padding-top: 176px;
     padding-bottom: 179px;
@@ -1751,15 +1761,6 @@ button,
     -o-object-position: 45% 50%;
     object-position: 45% 50%;
     height: calc(100% + 68px);
-  }
-
-  .intro__title {
-    font-size: 36px;
-    line-height: 45px;
-  }
-
-  .intro__text {
-    font-size: 16px;
   }
 
   .about {
