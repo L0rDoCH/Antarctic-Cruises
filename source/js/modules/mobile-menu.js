@@ -1,6 +1,8 @@
 import {FocusLock} from '../utils/focus-lock.js';
+import {ScrollLock} from '../utils/scroll-lock.js';
 
 const focusLock = new FocusLock();
+const scrollLock = new ScrollLock();
 
 const navMainToggle = document.querySelector('.header__menu-toggle');
 const navMainBurger = document.querySelector('.header__menu-toggle-burger');
@@ -17,6 +19,13 @@ const onMenuEscKeydown = (evt) => {
   }
 };
 
+const onClickOutsideMenu = (evt) => {
+  const target = evt.target;
+  if (!target.closest('.header-wrapper')) {
+    closeMenu();
+  }
+};
+
 const closeMenu = () => {
   navMainBurger.classList.remove('header__menu-toggle-burger--close');
   navMainMenu.classList.add('header-wrapper--close');
@@ -24,7 +33,9 @@ const closeMenu = () => {
   navMainMenu.classList.remove('header-wrapper--open');
   header.classList.remove('header--open');
   focusLock.unlock();
+  scrollLock.enableScrolling();
   document.removeEventListener('keydown', onMenuEscKeydown);
+  document.removeEventListener('click', onClickOutsideMenu);
 };
 
 const openMenu = () => {
@@ -34,7 +45,9 @@ const openMenu = () => {
   navMainMenu.classList.add('header-wrapper--open');
   header.classList.add('header--open');
   focusLock.lock('.header');
+  scrollLock.disableScrolling();
   document.addEventListener('keydown', onMenuEscKeydown);
+  document.addEventListener('click', onClickOutsideMenu);
 };
 
 
